@@ -7,10 +7,28 @@ spring:
   profiles: dev
   application:
     name: microservicecloud-config-client
+  datasource:
+    url: jdbc:oracle:thin:@221.232.143.220:15211:u01
+    username: appinv
+    password: appinv
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
 env: dev
 ---
 spring:
   profiles: test
   application:
     name: microservicecloud-config-client
+  datasource:
+    url: jdbc:oracle:thin:@221.232.143.220:15211:u01
+    username: appinvtest
+    password: appinvtest
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
 env: test
