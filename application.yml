@@ -16,7 +16,7 @@ spring:
     hibernate:
       ddl-auto: none
     show-sql: true
-env: dev1
+env: dev2
 ---
 spring:
   profiles: test
