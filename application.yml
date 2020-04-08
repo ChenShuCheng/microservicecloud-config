@@ -9,8 +9,8 @@ spring:
     name: microservicecloud-config-client
   datasource:
     url: jdbc:oracle:thin:@221.232.143.220:15211:u01
-    username: appinv
-    password: appinv
+    username: appinvtest
+    password: appinvtest
     driver-class-name: oracle.jdbc.OracleDriver
   jpa:
     hibernate:
